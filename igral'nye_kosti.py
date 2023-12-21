@@ -52,10 +52,11 @@ class Window(QMainWindow):
             answ = str(r) + '=' + str(float((a / len(self.results)) * 100)) +'%' 
             self.it.addItem(str(answ))
  
-
-app = QApplication(sys.argv)
-window = Window()
-window.show()
-sys.exit(app.exec())
-if __name__ == "__main__":
-    applic()
+def applic():
+        app = QApplication(sys.argv)
+        window = Window()
+        window.show()
+ 
+        sys.exit(app.exec())
+        if __name__ == "__main__":
+                applic()
